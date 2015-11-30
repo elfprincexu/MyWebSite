@@ -1,0 +1,19 @@
+####################################################
+#
+#	author: elfprincexu
+#	version: 1.0.1
+#	
+#	descrition: personal website
+#
+####################################################
+
+
+1. description
+
+	put public_html under a server root folder
+	it will automatically load webpages
+
+2. features;
+	Music Player plugin support
+	Personal data inside, support tab switching view
+
