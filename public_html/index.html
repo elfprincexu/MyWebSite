@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Author" content="Junxian Xu"  />
+<meta name="Description" content="Junxian Xu's Personal Website" />
+<title>Junxian Xu Website</title>
+<link rel="stylesheet" href=css/style.css type="text/css" />
+<link rel="stylesheet" type="text/css" href=audio_plugin/css/music_style.css>
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="audio_plugin/jquery-jplayer/jquery.jplayer.js"></script>
+<script type="text/javascript" src="audio_plugin/ttw-music-player-min.js"></script>
+<script type="text/javascript" src="js/myplaylist.js"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+            var description = 'This is a selection of the most beautiful trance songs in my opinion. If you are into the melodic/uplifting/chill-out stuff then there are good chances you are gonna like it :). ';
+			$("#audioplayer").ttwMusicPlayer(myPlaylist, {
+                	autoPlay:false, 
+                	description:description,
+                	jPlayer:{
+                    		swfPath:'audio_plugin/jquery-jplayer' //You need to override the default swf path any time the directory structure changes
+                		}
+            });   
+	    });     		
+</script>
+<script type="text/javascript" src="js/link_functions.js"></script>
+
+<body>
+       <div align="center">
+            <table width="900" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td  width="900" height="212" background="images/background.png" valign="top">
+                        <table border="0" cellpadding="10" cellspacing="0">
+                            <tr>
+                                <td colspan="3" class="name">
+                                    <b>Junxian Xu</b>
+                                </td>
+                                <td width="10px"> </td>
+                                <td width="200px" rowspan="2" align="right"  >
+                                    <img class="head" width="150" src="images/head.jpg"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="500px" colspan="3" class="brief_intro">
+                                    Computer Science and Engineering
+                                    <br />
+                                    Master: École nationale supérieure des télécommunication <a href= http://www.telecom-paristech.fr/nc/formation-et-innovation-dans-le-numerique.html>(ENST)</a>, Paris
+                                    <br />
+                                    Bachelor: Southeast University <a href=http://www.seu.edu.cn/s/132/>(SEU)</a>, Nanjing
+                                    <br />
+                                    Email: nicolas.xu89@gmail.com                  or               nicolas.xu@kla-tencor.com
+                                    <br />
+									My Linkedin: <a href= https://www.linkedin.com/pub/junxian-xu/57/702/585?trk=pub-pbmap>(Junxian Xu's LinkedIn)</a>     
+									<br />
+									
+                                    <div class="smallcomment"><p><b>Note*</b> Background image was taken by me at Montreux, Swiss <a href=https://maps.google.fr/maps?safe=off&q=Montreux,+Suisse&ie=UTF-8&hq=&hnear=0x478e9b20cdb650cd:0xccc07a7fc46d1847,Montreux,+Suisse&gl=fr&ei=WhStUfL3M-7G7Aag9IDIDA&ved=0CMcBELYD>Here</a>; original pics: <a href="images/background.png">PIC</a></p></div>
+                                </td>
+                           </tr>
+                        </table>
+                    </td>
+                </tr>   
+            </table>
+           
+           
+           <header>
+           <div id="links">
+           		<button type="button" onclick="loadCV('file/CV_Junxian_Xu_Eng.pdf')"> CV </button>
+           		<button type="button" onclick="loadAbout()"> Aboutme </button>
+           		<button type="button" onclick="loadEdu()"> Education </button>
+           		<button type="button" onclick="loadPx()"> Professional Experience </button>
+           		<button type="button" onclick="loadHonors()"> Honors and awards </button>
+           		<button type="button" onclick="loadHobbies()"> Hobbies </button>
+           </div>
+           </header>
+           
+           
+           <!--第三部分-->
+           <span> <br /></span>
+           <table id="third" >
+           		<tr>
+                	<!--audioplayer -->
+                	<td width="370px" id="audioplayer" valign="top"> </td>
+                    
+                    <!-- gap between two td -->
+                    <td width="10px" ></td>
+                    
+                    <!-- the contexte -->
+                    <td width="510px" id="content" valign="top">
+                    	<span style="font-size:6px"> <br /></span>
+                        <div align="center">
+                        	<!--Table-->
+                            <table width="510px" height="530px" border="0" cellpadding="0" cellspacing="0" >
+                               	<!--item title-->
+                                <tr>
+                                    <td width="1" bgcolor="AAAAAA"></td>
+                                    <td rowspan="2" colspan="2" width="542" height="27" bgcolor="#597F20" class="itemtitle" id="itemtitle">&nbsp;&nbsp;About Me</td>
+                                    <td width="1" bgcolor="AAAAAA"></td>
+                                    <td width="5" height="4" bgcolor="FFFFFF"></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td width="1" bgcolor="AAAAAA"></td>
+                                    <td width="1" bgcolor="AAAAAA"></td>
+                                    <td width="5" bgcolor="F0F0F0" height="23"></td>
+                                </tr>
+  
+  								<!--item text-->
+                                <tr>
+                                    <td width="1" bgcolor="AAAAAA"></td>
+                                    <td colspan="2" bgcolor="FFFFFF" valign="top">
+                                        <table width="510px" border="0" cellpadding="17" cellspacing="0">
+                                            <tr>
+                                                <td class="itemtext" >
+                                                    <div align="justify" id="itemtext">
+                                                    	<script type="text/javascript">
+															loadAbout()
+                                                        </script>
+                                                   </div>
+                                                 </td>
+                                             </tr>
+                                          </table>
+                                     </td>
+                                     <td width="1" bgcolor="AAAAAA"></td>
+                                     <td width="5" bgcolor="F0F0F0"></td>
+                                     </tr>
+     							</table>
+                           </div>
+                    </td>
+                </tr>
+           </table>
+     
+     <footer>
+		<div class="container" align="center">
+			<table>	
+				<tr>
+					<!--<td id="visit_times"><script>loadTimes()</script></td>-->
+					<td ><p>&copy;All rights reserved by Junxian Xu</p></td>
+				</tr>
+			</table>
+		</div>
+	</footer>
+ 
+	</div>
+    
+   
+</body>
+</html>
